@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <title>A.M TRADERS</title>
+    <link rel="stylesheet" href="css/about.min.css" />
+  </head>
+  <body>
+    @@include('html/sections/header.html', {})
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__inner">
+          <h1 class="hero__title">A.M TRADERS</h1>
+          <p class="hero__subtitle">Your Safety Is Our Priority</p>
+
+          <div class="hero__search">
+            @@include('html/blocks/search.html', {})
+          </div>
+        </div>
+      </section>
+
+      <section class="about">@@include('html/blocks/about.html', {})</section>
+    </main>
+
+    @@include('html/sections/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

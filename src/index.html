@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <title>A.M TRADERS</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    @@include('html/sections/header.html', {})
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__info">
+            <h1 class="hero__title">A.M TRADERS</h1>
+            <p class="hero__subtitle">Your Safety Is Our Priority</p>
+            <p class="hero__text">
+              All Kinds Of Imported Draps, Surgical Gown, OT Sheets and Towels
+              Supplier
+            </p>
+            <a href="products.html" class="products-link">SHOW PRODUCTS</a>
+          </div>
+
+          <div class="hero__search">
+            @@include('html/blocks/search.html', {})
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="products__inner">
+          <h2 class="products__title">
+            <span class="products__title-span">OUR</span> PRODUCTS
+          </h2>
+
+          <div class="products__cards">
+            <div class="products__card">
+              <img
+                src="@img/products/sms-surgical-gown.png"
+                alt="surgical gown"
+                class="products__card-img"
+              />
+              <p class="products__card-text">SMS Surgical Gown</p>
+            </div>
+
+            <div class="products__card">
+              <img
+                src="@img/products/surgical-adhesive-drape-sheet.png"
+                alt="surgical sheets"
+                class="products__card-img"
+              />
+              <p class="products__card-text">Surgical Adhesive drape sheets</p>
+            </div>
+
+            <div class="products__card">
+              <img
+                src="@img/products/ophthalmic-drape.png"
+                alt="ophthalmic drape"
+                class="products__card-img"
+              />
+              <p class="products__card-text">Ophthalmic Drape</p>
+            </div>
+          </div>
+
+          <a href="products.html" class="products-link">MORE PRODUCTS</a>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="advantages__inner">
+          <h2 class="advantages__title">WHY CHOOSE US</h2>
+
+          <div class="advantages__items">
+            <div class="advantages__item">
+              <p class="advantages__item-title">QUALITY</p>
+              <p class="advantages__item-text">
+                Our Product are made of TOP quality non woven fabric and latex
+                free Substances
+              </p>
+            </div>
+
+            <div class="advantages__item">
+              <p class="advantages__item-title">PERSONAL</p>
+              <p class="advantages__item-text">
+                We have highly qualified team memebers and staff
+              </p>
+            </div>
+
+            <div class="advantages__item">
+              <p class="advantages__item-title">AFFORDABLE PRICES</p>
+              <p class="advantages__item-text">
+                We Provide Quality Product at Affordable prices
+              </p>
+            </div>
+
+            <div class="advantages__item">
+              <p class="advantages__item-title">COMMITMENT</p>
+              <p class="advantages__item-text">
+                Our Product is delivered On Time with Free Delivery all over
+                Pakistan
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">@@include('html/blocks/about.html', {})</section>
+
+      <section class="contacts">
+        <div class="contacts__inner">
+          <div class="contacts-top">
+            <h3 class="contacts-top__title">OUR CONTACTS</h3>
+
+            <p class="contacts-top__info">+92 321 585 5167</p>
+            <p class="contacts-top__info contacts-top__info_margin">
+              almertraders@email.com
+            </p>
+
+            <p class="contacts-top__info">+92 332 548 1845</p>
+            <p class="contacts-top__info contacts-top__info_margin">
+              safabbas486@email.com
+            </p>
+
+            <p class="contacts-top__info">Office No. 1</p>
+            <p class="contacts-top__info">Khayaban e sir syed</p>
+            <p class="contacts-top__info">SOGO Center</p>
+            <p class="contacts-top__info">Rawalpindi</p>
+          </div>
+
+          <div class="contacts-bottom">
+            <h3 class="contacts-bottom__title">DROP US A LINE</h3>
+            @@include('html/blocks/form.html', {})
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/sections/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

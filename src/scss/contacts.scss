@@ -1,0 +1,16 @@
+@import "./abstract/variables";
+@import "./abstract/mixins";
+@import "./abstract/responsive";
+
+$bg-mobile: url("@img/hero-contacts-mobile.jpg");
+$bg-desktop: url("@img/hero-contacts-desktop.jpg");
+
+@import "./base/fonts";
+@import "./base/normalize.scss";
+@import "./base/global.scss";
+
+@import "./sections/header";
+@import "./sections/main-contacts";
+@import "./blocks/search";
+@import "./blocks/form";
+@import "./sections/footer";

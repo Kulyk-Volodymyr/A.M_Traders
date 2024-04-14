@@ -1,0 +1,65 @@
+.form {
+  width: 100%;
+  @include screen-min-1024 {
+    max-width: 820px;
+  }
+
+  &__fieldset {
+    border: none;
+    display: grid;
+    gap: 1rem;
+    outline: none;
+    padding: 0;
+    @include screen-min-768 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__label {
+    display: none;
+  }
+
+  &__input {
+    background-color: $color-white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    @include screen-min-480 {
+      font-size: 1.25rem;
+    }
+    @include screen-min-768 {
+      font-size: 1.5rem;
+      padding: 0.75rem 1.5rem;
+    }
+    @include screen-min-1024 {
+      font-size: 1.75rem;
+    }
+
+    &_textarea {
+      margin-block: 1rem;
+      width: 100%;
+    }
+
+    &_button {
+      color: $color-dark-blue;
+      cursor: pointer;
+      transition: 0.2s;
+      @include screen-min-768 {
+        width: calc(50% - 0.5rem);
+      }
+
+      &:hover {
+        color: $color-black;
+      }
+    }
+  }
+
+  &__button-container {
+    text-align: right;
+    width: 100%;
+  }
+}

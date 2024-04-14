@@ -1,0 +1,157 @@
+@mixin _header-flex($direction: row, $justify: space-between) {
+  align-items: center;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+
+.header {
+  @include basic-padding-inline;
+  background-color: $color-dark-blue;
+  padding-block: 0.75rem;
+
+  &__inner {
+    @include _header-flex();
+    gap: 3rem;
+    margin: auto;
+    max-width: 1360px;
+  }
+
+  &__logo {
+    display: block;
+    width: 80px;
+  }
+
+  &__items {
+    @include _header-flex($direction: column, $justify: flex-start);
+    gap: 5rem;
+    background-color: rgba($color-dark-blue, 0.8);
+    backdrop-filter: blur(4px);
+    height: 100vh;
+    padding: 6rem 1rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    z-index: 2;
+    @include screen-burger {
+      background-color: transparent;
+      flex-direction: row;
+      gap: 3rem;
+      height: fit-content;
+      justify-content: space-between;
+      padding: 0;
+      position: relative;
+      width: 100%;
+    }
+
+    &_hidden {
+      transform: translateX(200px);
+      @include screen-burger {
+        transform: translateX(0);
+      }
+    }
+
+    &_visible {
+      transform: translateX(0px);
+    }
+  }
+
+  &__nav {
+    @include _header-flex($direction: column, $justify: flex-start);
+    display: flex;
+    flex-direction: column;
+    @include screen-burger {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__list {
+    @include _header-flex($direction: column);
+    gap: 3rem;
+    @include screen-burger {
+      flex-direction: row;
+    }
+  }
+
+  &__list-item {
+    list-style: none;
+  }
+
+  &__list-link {
+    color: $color-white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+
+    &:hover {
+      color: $color-gray;
+    }
+
+    &-active {
+      color: $color-black;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+  }
+
+  &__quote-btn {
+    background-color: $color-white;
+    border: none;
+    border-radius: 0.75rem;
+    color: $color-black;
+    cursor: pointer;
+    font-size: 1.25rem;
+    outline: none;
+    padding: 0.75rem;
+    min-width: fit-content;
+    transition: 0.2s;
+    &:hover {
+      color: $color-gray;
+    }
+  }
+
+  &__burger {
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    @include screen-burger {
+      display: none;
+    }
+
+    &:hover {
+      .header__burger-bar1,
+      .header__burger-bar2,
+      .header__burger-bar3 {
+        background-color: $color-gray;
+      }
+    }
+  }
+
+  &__burger-bar1,
+  &__burger-bar2,
+  &__burger-bar3 {
+    background-color: $color-black;
+    height: 2px;
+    transition: 0.2s;
+    width: 32px;
+  }
+
+  &__burger-bar2 {
+    margin: 6px 0;
+  }
+}
+
+.burger-toggle .header__burger-bar1 {
+  transform: translate(0, 8px) rotate(-45deg);
+}
+
+.burger-toggle .header__burger-bar2 {
+  opacity: 0;
+}
+
+.burger-toggle .header__burger-bar3 {
+  transform: translate(0, -8px) rotate(45deg);
+}

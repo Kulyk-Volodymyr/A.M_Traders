@@ -1,0 +1,103 @@
+@mixin basic-padding-inline() {
+  padding-inline: 1.5rem;
+  @include screen-min-768 {
+    padding-inline: 2rem;
+  }
+  @include screen-min-1280 {
+    padding-inline: 2.5rem;
+  }
+}
+
+@mixin hero-section {
+  @include basic-padding-inline;
+  background-image: $bg-mobile;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+  @include screen-min-480 {
+    height: 600px;
+  }
+  @include screen-min-768 {
+    background-image: $bg-desktop;
+    height: 650px;
+  }
+  @include screen-min-1024 {
+    height: 700px;
+  }
+  @include screen-min-1280 {
+    height: 750px;
+  }
+  @include screen-min-1400 {
+    height: 800px;
+  }
+}
+
+@mixin hero-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0 auto;
+  position: relative;
+  @media screen and (min-width: 320px) {
+    font-size: 2.25rem;
+  }
+  @include screen-min-480 {
+    font-size: 3.5rem;
+  }
+  @include screen-min-768 {
+    font-size: 5rem;
+  }
+  @include screen-min-1024 {
+    font-size: 6rem;
+  }
+}
+
+@mixin hero-subtitle {
+  font-size: 1rem;
+  position: relative;
+  @include screen-min-480 {
+    font-size: 1.5rem;
+  }
+  @include screen-min-768 {
+    font-size: 2rem;
+  }
+  @include screen-min-1024 {
+    font-size: 2.5rem;
+  }
+}
+
+@mixin h2-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto;
+  @media screen and (min-width: 320px) {
+    font-size: 1.875rem;
+  }
+  @include screen-min-480 {
+    font-size: 2.75rem;
+  }
+  @include screen-min-768 {
+    font-size: 3.75rem;
+  }
+  @include screen-min-1024 {
+    font-size: 4.5rem;
+  }
+}
+
+@mixin h3-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  @media screen and (min-width: 320px) {
+    font-size: 1.5rem;
+  }
+  @include screen-min-480 {
+    font-size: 2.25rem;
+  }
+  @include screen-min-768 {
+    font-size: 2.5rem;
+  }
+  @include screen-min-1024 {
+    font-size: 3rem;
+  }
+}

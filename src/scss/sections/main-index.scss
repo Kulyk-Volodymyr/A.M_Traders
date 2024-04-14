@@ -1,0 +1,325 @@
+.hero {
+  @include hero-section;
+  background-color: #fff3;
+  background-blend-mode: lighten;
+
+  &__inner {
+    height: 100%;
+    margin: auto;
+    max-width: 1280px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+  }
+
+  &__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+    @include screen-min-768 {
+      margin: 0;
+      max-width: 590px;
+    }
+    @include screen-min-1024 {
+      margin: 0;
+      max-width: 650px;
+    }
+  }
+
+  &__title {
+    @include hero-title;
+  }
+
+  &__subtitle {
+    @include hero-subtitle;
+  }
+
+  &__text {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-block: 2rem;
+    max-width: 250px;
+    text-align: center;
+    @include screen-min-480 {
+      font-size: 1.125rem;
+      max-width: 280px;
+    }
+    @include screen-min-768 {
+      font-size: 1.25rem;
+      max-width: 490px;
+    }
+    @include screen-min-1024 {
+      font-size: 1.375rem;
+      margin-block: 3rem;
+      max-width: 570px;
+    }
+  }
+
+  &__search {
+    position: absolute;
+    right: 0;
+    top: 1.5rem;
+  }
+}
+
+.products-link {
+  background-color: $color-white;
+  border: 2px solid $color-dark-blue;
+  color: $color-dark-blue;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: 0.2s;
+  @include screen-min-480 {
+    font-size: 1.125rem;
+    padding: 0.75rem;
+  }
+  @include screen-min-768 {
+    font-size: 1.25rem;
+    padding: 1rem;
+  }
+
+  &:hover {
+    border-color: $color-gray;
+    color: $color-gray;
+  }
+}
+
+.products {
+  @include basic-padding-inline;
+  padding-block: 4.5rem;
+  @include screen-min-768 {
+    padding-block: 6rem;
+  }
+
+  &__inner {
+    margin: auto;
+    max-width: 1280px;
+    text-align: center;
+  }
+
+  &__title {
+    @include h2-text;
+
+    &-span {
+      color: $color-dark-blue;
+    }
+  }
+
+  &__cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    @include screen-min-768 {
+      align-items: stretch;
+      flex-direction: row;
+    }
+  }
+
+  &__card {
+    background-color: $color-white;
+    border-radius: 1rem;
+    flex: 1;
+    max-width: 300px;
+    overflow: hidden;
+    @include screen-min-480 {
+      max-width: 360px;
+    }
+    @include screen-min-768 {
+      max-width: none;
+    }
+
+    &-img {
+      display: block;
+      max-width: 100%;
+    }
+
+    &-text {
+      font-size: 1rem;
+      padding: 1rem;
+      @include screen-min-480 {
+        font-size: 1.25rem;
+      }
+      @include screen-min-768 {
+        font-size: 1.5rem;
+      }
+      @include screen-min-1024 {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
+
+.advantages {
+  @include basic-padding-inline;
+  background-image: $bg-advantages-mobile;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0006;
+  background-blend-mode: darken;
+  clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  width: 100%;
+  @include screen-min-480 {
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+    padding-bottom: 12rem;
+  }
+  @include screen-min-768 {
+    background-image: $bg-advantages-desktop;
+    padding-top: 6rem;
+  }
+
+  &__inner {
+    margin: auto;
+    max-width: 1280px;
+    text-align: center;
+  }
+
+  &__title {
+    @include h2-text;
+    color: $color-white;
+    margin-bottom: 3rem;
+  }
+
+  &__items {
+    display: grid;
+    gap: 2rem;
+    margin: auto;
+    max-width: 300px;
+    @include screen-min-480 {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 600px;
+    }
+    @include screen-min-1024 {
+      grid-template-columns: repeat(4, 1fr);
+      max-width: none;
+    }
+  }
+
+  &__item {
+    align-items: center;
+    background-color: $color-blue;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    padding: 4rem 1rem;
+
+    &-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      @include screen-min-480 {
+        font-size: 1.5rem;
+      }
+      @include screen-min-768 {
+        font-size: 1.75rem;
+      }
+    }
+
+    &-text {
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: left;
+      @include screen-min-480 {
+        font-size: 1.125rem;
+      }
+      @include screen-min-768 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+.about {
+  @include basic-padding-inline;
+  padding-block: 4.5rem;
+  @include screen-min-768 {
+    padding-block: 6rem;
+  }
+}
+
+.contacts {
+  @include basic-padding-inline;
+  background-image: $bg-contacts-mobile;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0006;
+  background-blend-mode: darken;
+  clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 95%);
+  margin-bottom: 4rem;
+  padding-block: 9rem;
+  width: 100%;
+  @include screen-min-768 {
+    background-image: $bg-contacts-desktop;
+  }
+  @include screen-min-1024 {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
+    padding-block: 11rem;
+  }
+  @include screen-min-1400 {
+    padding-block: 12rem;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: auto;
+    max-width: 520px;
+    @include screen-min-768 {
+      max-width: 780px;
+    }
+    @include screen-min-1024 {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      max-width: 1360px;
+    }
+  }
+}
+
+.contacts-top {
+  color: $color-white;
+
+  &__title {
+    @include h3-text;
+    margin-bottom: 1rem;
+  }
+
+  &__info {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    @include screen-min-480 {
+      font-size: 1.25rem;
+    }
+    @include screen-min-768 {
+      font-size: 1.5rem;
+    }
+    @include screen-min-1024 {
+      font-size: 1.75rem;
+    }
+
+    &_margin {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.contacts-bottom {
+  &__title {
+    @include h3-text;
+    color: $color-white;
+    margin-bottom: 2rem;
+  }
+}

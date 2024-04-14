@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <title>A.M TRADERS</title>
+    <link rel="stylesheet" href="css/contacts.min.css" />
+  </head>
+  <body>
+    @@include('html/sections/header.html', {})
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__inner">
+          <h1 class="hero__title">GET IN TOUCH</h1>
+
+          <div class="hero__search">
+            @@include('html/blocks/search.html', {})
+          </div>
+        </div>
+      </section>
+
+      <section class="ourcontacts">
+        <div class="ourcontacts__item">
+          <h3 class="ourcontacts__title">Main Office</h3>
+          <p class="ourcontacts__text ourcontacts__text_white">
+            Rawalpindi Pakistan
+          </p>
+          <p class="ourcontacts__text"></p>
+        </div>
+
+        <div class="ourcontacts__item">
+          <h3 class="ourcontacts__title">Working Hours</h3>
+          <p class="ourcontacts__text ourcontacts__text_white">
+            Mon - Sun: 10AM - 7PM
+          </p>
+          <p class="ourcontacts__text ourcontacts__text_white">Fri: Holiday</p>
+        </div>
+
+        <div class="ourcontacts__item">
+          <h3 class="ourcontacts__title">Phone Numbers</h3>
+          <p
+            class="ourcontacts__text ourcontacts__text_white ourcontacts__text_margin-bottom"
+          >
+            For Inquries:
+          </p>
+          <p class="ourcontacts__text">+92 321 585 5167</p>
+          <p class="ourcontacts__text">+92 332 548 1845</p>
+        </div>
+
+        <div class="ourcontacts__item">
+          <h3 class="ourcontacts__title">Email Address</h3>
+          <p
+            class="ourcontacts__text ourcontacts__text_white ourcontacts__text_margin-bottom"
+          >
+            For Inquries:
+          </p>
+          <p class="ourcontacts__text">almertraders@email.com</p>
+          <p class="ourcontacts__text">safabbas486@email.com</p>
+        </div>
+      </section>
+
+      <section class="drop-us">
+        <div class="drop-us__inner">
+          <h2 class="drop-us__title">
+            DROP US <span class="drop-us__title-span">A LINE</span>
+          </h2>
+          @@include('html/blocks/form.html', {})
+        </div>
+      </section>
+    </main>
+
+    @@include('html/sections/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
