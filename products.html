@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <title>A.M TRADERS</title>
+    <link rel="stylesheet" href="css/products.min.css?_v=20240414224415" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="header__inner">
+    <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo" class="header__logo" /></picture>
+
+    <div class="header__items header__items_hidden">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="index.html" class="header__list-link">Home</a>
+          </li>
+          <li class="header__list-item">
+            <a href="about.html" class="header__list-link">About Us</a>
+          </li>
+          <li class="header__list-item">
+            <a href="products.html" class="header__list-link">Products</a>
+          </li>
+          <li class="header__list-item">
+            <a href="contacts.html" class="header__list-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header__quote-btn">GET QUOTE</button>
+    </div>
+
+    <div class="header__burger" id="burger-button" role="switch">
+      <div class="header__burger-bar1"></div>
+      <div class="header__burger-bar2"></div>
+      <div class="header__burger-bar3"></div>
+    </div>
+  </div>
+</header>
+
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__inner">
+          <h1 class="hero__title">A.M TRADERS</h1>
+          <p class="hero__subtitle">Your Safety Is Our Priority</p>
+
+          <div class="hero__search">
+            <div class="search-field">
+  <input
+    type="text"
+    name="search-product"
+    id="search-product"
+    placeholder="Search a Product"
+    list="products-list"
+    class="search-field__input"
+  />
+  <datalist id="products-list"> </datalist>
+  <button class="search-field__button">SHOW</button>
+</div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="our-products">
+        <div class="our-products__inner">
+          <h2 class="our-products__title">
+            <span class="our-products__title-span">OUR</span> PRODUCTS
+          </h2>
+
+          <div class="products">
+            <div class="products__categories">
+              <div class="products__categories-title">
+                <p class="products__categories-title-text">CATEGORIES</p>
+                <div class="products__categories-title-arrow"></div>
+              </div>
+
+              <div class="products__categories-wrapper">
+                <div class="products__categories-category">
+                  <input
+                    type="radio"
+                    name="products"
+                    id="products-all"
+                    value="all"
+                    checked
+                    class="products__categories-radio"
+                  />
+                  <label for="products-all" class="products__categories-label"
+                    >ALL</label
+                  >
+                </div>
+
+                <div class="products__categories-category">
+                  <input
+                    type="radio"
+                    name="products"
+                    id="products-gowns"
+                    value="gowns"
+                    class="products__categories-radio"
+                  />
+                  <label for="products-gowns" class="products__categories-label"
+                    >SURGICAL GOWNS</label
+                  >
+                </div>
+
+                <div class="products__categories-category">
+                  <input
+                    type="radio"
+                    name="products"
+                    id="products-drapes"
+                    value="drapes"
+                    class="products__categories-radio"
+                  />
+                  <label
+                    for="products-drapes"
+                    class="products__categories-label"
+                    >SURGICAL DRAPES<br />& TOWELS</label
+                  >
+                </div>
+
+                <div class="products__categories-category">
+                  <input
+                    type="radio"
+                    name="products"
+                    id="products-kits"
+                    value="kits"
+                    class="products__categories-radio"
+                  />
+                  <label for="products-kits" class="products__categories-label"
+                    >SURGICAL KITS</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="products__list">
+              <p class="products__list-title">ALL</p>
+
+              <ul>
+                <li
+                  class="product"
+                  id="sms-surgical-gown"
+                  data-category="gowns"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">SMS Surgical Gown</p>
+                      <p class="product__header-category">Surgical Gown</p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/sms-surgical-gown.png"
+                        alt="surgical gown"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        Our SMS Isolation Gown Is Durable, Are 100% Recyclable
+                        As Non-Clinical Waste, So When It Is Time For
+                        Replacement It Can Be Disposed Of Safely And Envi
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="surgical-adhesive-drape-sheet"
+                  data-category="drapes"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">
+                        Surgical Adhesive Drape Sheet
+                      </p>
+                      <p class="product__header-category">
+                        Surgical Drapes & Towels
+                      </p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/surgical-adhesive-drape-sheet.png"
+                        alt="surgical adhesive drape sheet"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        We Hold A Prominent Market Position As A Leading
+                        Manufacturer And Supplier Of Adhesive Surgical Drape.
+                        This General Surgical Drape Is Made By Making U
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="basic-orthopedic-pack"
+                  data-category="kits"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">Basic Orthopedic Pack</p>
+                      <p class="product__header-category">Surgical Kits</p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/basic-orthopedic-pack.png"
+                        alt="orthopedic pack"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        A.M TRADERS Provides Top Quality Surgical Packs Which
+                        Provide Necessary Disposable Products During Surgery. It
+                        Has Been Studied That Surgical Disposable Packs
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="reinforced-surgical-gown"
+                  data-category="gowns"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">
+                        Reinforced Surgical Gown
+                      </p>
+                      <p class="product__header-category">Surgical Gown</p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/reinforced-surgical-gown.png"
+                        alt="surgical gown"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        We Offer An Exclusive Range Of Reinforced Surgical
+                        Gowns. Reinforced Surgical Gowns Are Designed To Provide
+                        The Right Balance Of Comfort And Protectio
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="surgical-adhesive-u-drapes"
+                  data-category="drapes"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">
+                        Surgical Adhesive U-Drapes
+                      </p>
+                      <p class="product__header-category">
+                        Surgical Drapes & Towels
+                      </p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/surgical-adhesive-u-drapes.png"
+                        alt="surgical adhesive drapes"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        We Hold A Prominent Market Position As A Leading
+                        Manufacturer And Supplier Of Adhesive Surgical Drape.
+                        This Adhesive Surgical U-Drape Is Made By Makin
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="ophthalmic-drape"
+                  data-category="drapes"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">Ophthalmic Drape</p>
+                      <p class="product__header-category">
+                        Surgical Drapes & Towels
+                      </p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/ophthalmic-drape.png"
+                        alt="ophthalmic drape"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        Our Ophthalmic Drape Also Known As Surgical Disposable
+                        Eye Drape Is Made Of Top Quality Materials Which Include
+                        SMS, PPSB With PE Lamination. It Is No
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="cesarean-section-surgical-pack"
+                  data-category="kits"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">
+                        Cesarean Section Surgical Pack
+                      </p>
+                      <p class="product__header-category">Surgical Kits</p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/cesarean-section-surgical-pack.png"
+                        alt="surgical pack"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        Cesarean-Section Drape Pack Features A Cesarean-Section
+                        Drape With A Pear-Shaped Fenestration Pouch For
+                        Collection Of Fluids And Incises Film Which Is
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="gynae-kit-delivery-kit"
+                  data-category="kits"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">
+                        Gynae Kit | Delivery Kit
+                      </p>
+                      <p class="product__header-category">Surgical Kits</p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/gynae-kit-delivery-kit.png"
+                        alt="gynae kit"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        We Supply A Wide Range Of Surgical Drapes With Top
+                        Quality And Competitive Prices. Widely Used In Surgery
+                        Operation, Bedding On The Patients In Order
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="laparotomy-drape-pack"
+                  data-category="kits"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">Laparotomy Drape Pack</p>
+                      <p class="product__header-category">Surgical Kits</p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/laparotomy-drape-pack.png"
+                        alt="laparotomy drape pack"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        We Supply A Wide Range Of Surgical Drapes With Top
+                        Quality And Competitive Prices. Widely Used In Surgery
+                        Operation, Bedding On The Patients In Order
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="isolation-surgical-gown"
+                  data-category="gowns"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">
+                        Isolation Surgical Gown
+                      </p>
+                      <p class="product__header-category">Surgical Gown</p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/isolation-surgical-gown.png"
+                        alt="surgical gown"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        Isolation Surgical Gowns Are Made Of Polypropylene And 3
+                        Layers Of Spun Bound. It Is Mainly Used For Medical
+                        Operations And Treatment Of Patients. Epi
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="surgical-disposable-towels"
+                  data-category="drapes"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">
+                        Surgical Disposable Towels
+                      </p>
+                      <p class="product__header-category">
+                        Surgical Drapes & Towels
+                      </p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/surgical-disposable-towels.png"
+                        alt="surgical towels"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        We Provide Top-Quality Towels Made From PPSB And
+                        Spunlace Making Them Soft And Durable. These Towels Have
+                        Much Application And Can Be Used As Seems Fi
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="product" id="turp-drape" data-category="drapes">
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">TURP Drape</p>
+                      <p class="product__header-category">
+                        Surgical Drapes & Towels
+                      </p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/turp-drape.png"
+                        alt="surgical drape"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        A.M TRADERS care manufacture TURP Drapes Kit with
+                        international quality standards TURP Drape Kit are used
+                        Trans Urethral Resection of Prostate Surgery.
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="orthopedic-drape-pack"
+                  data-category="kits"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">Orthopedic Drape Pack</p>
+                      <p class="product__header-category">Surgical Kits</p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/orthopedic-drape-pack.png"
+                        alt="orthopedic drape pack"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        Orthopedic Packs Are Specially Designed To Contain
+                        Surgical Items Needed To Perform Orthopedic Surgery In
+                        The Operating Room, They Are Packed Sterile
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="cardiovascular-drape-pack"
+                  data-category="kits"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">
+                        Cardiovascular Drape Pack
+                      </p>
+                      <p class="product__header-category">Surgical Kits</p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/cardiovascular-drape-pack.png"
+                        alt="cardiovascular drape pack"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        A.M TRADERS Is A Recognized Leader In The Development Of
+                        High-Performance Medical Fabrics. Like All Of Our Drapes
+                        Packs, Our Cardiovascular Drape Pack Provid
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="product" id="urs-drape" data-category="drapes">
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">URS Drape</p>
+                      <p class="product__header-category">
+                        Surgical Drapes & Towels
+                      </p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/urs-drape.png"
+                        alt="urs drape"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        A.M TRADERS Provides URS (Ureteroscopy) Drapes Kit with
+                        international quality standard. URS Drapes is used in
+                        ureteroscopy procedure.
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="angiography-drape"
+                  data-category="drapes"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">Angiography Drape</p>
+                      <p class="product__header-category">
+                        Surgical Drapes & Towels
+                      </p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/angiography-drape.png"
+                        alt="angiography drape"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        Femoral Angiography Drape Is Made Of Top-Quality
+                        Melt-Blown Non-Woven SMMS Fabric The Extra Layer Of
+                        These Fabrics Provides Fluid Resistance As Well A
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="disposable-bed-sheets"
+                  data-category="drapes"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">Disposable Bed Sheets</p>
+                      <p class="product__header-category">
+                        Surgical Drapes & Towels
+                      </p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/disposable-bed-sheets.png"
+                        alt="bed sheets"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        Our Bedsheets Provide A Sterile Environment To The
+                        Patient. The Extra Fabric Layer Provides High Barrier
+                        Protection Against Bacteria And Particles Whi
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+
+                <li
+                  class="product"
+                  id="disposable-ophthalmic-drape-pack"
+                  data-category="kits"
+                >
+                  <div class="product__content">
+                    <div class="product__header">
+                      <p class="product__header-title">
+                        Disposable Ophthalmic Drape Pack
+                      </p>
+                      <p class="product__header-category">Surgical Kits</p>
+                    </div>
+                    <div class="product__image">
+                      <img
+                        src="img/products/disposable-ophthalmic-drape-pack.png"
+                        alt="ophthalmic drape pack"
+                        class="product__image-pic"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="product__info">
+                      <p class="product__info-description">
+                        A.M TRADERS Is A Recognized Leader In The Development Of
+                        High-Performance Medical Fabrics. Like All Of Our Drapes
+                        Packs, Our Disposable Ophthalmic Drape Pack
+                      </p>
+                      <button class="product__info-button">GET QUOTE</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__info">
+      <div class="footer__top">
+        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo" class="footer__top-img" /></picture>
+        <p class="footer__top-info">
+          Find us on any of these platforms, we respond 1-2 business days.
+        </p>
+      </div>
+
+      <div class="footer__bottom">
+        <div>
+          <p class="footer__bottom-title">LINKS</p>
+
+          <nav>
+            <ul class="footer__bottom-list">
+              <li class="footer__bottom-list-item">
+                <a href="index.html" class="footer__bottom-list-link">Home</a>
+              </li>
+
+              <li class="footer__bottom-list-item">
+                <a href="about.html" class="footer__bottom-list-link"
+                  >About Us</a
+                >
+              </li>
+
+              <li class="footer__bottom-list-item">
+                <a href="products.html" class="footer__bottom-list-link"
+                  >Products</a
+                >
+              </li>
+
+              <li class="footer__bottom-list-item">
+                <a href="contacts.html" class="footer__bottom-list-link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__bottom-contacts">
+          <p class="footer__bottom-title">CONTACT US</p>
+
+          <p class="footer__bottom-contacts-info">+92 321 585 5167</p>
+          <p
+            class="footer__bottom-contacts-info footer__bottom-contacts-info_margin"
+          >
+            almertraders@email.com
+          </p>
+
+          <p class="footer__bottom-contacts-info">+92 332 548 1845</p>
+          <p
+            class="footer__bottom-contacts-info footer__bottom-contacts-info_margin"
+          >
+            safabbas486@email.com
+          </p>
+
+          <p class="footer__bottom-contacts-info">Office No. 1</p>
+          <p class="footer__bottom-contacts-info">Khayaban e sir syed</p>
+          <p class="footer__bottom-contacts-info">SOGO Center</p>
+          <p class="footer__bottom-contacts-info">Rawalpindi</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer__copyright">
+      Copyright © 2020 - 2023 AM traders All Right Reserved
+    </p>
+  </div>
+</footer>
+
+    <script src="js/app.min.js?_v=20240414224415"></script>
+  </body>
+</html>
